@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <link rel="icon" href="jackson-sophat-wUbNvDTsOIc-unsplash.jpg">
+<head>
+  <title>Hotel Room Booking Form</title>
+</head>
+<body>
+
+  <h1 style="background-color: slategray;">Hotel Room Booking Form</h1>
+
+  <form action="/submit-booking" method="post">
+    
+   <h3> <label for="fullname">FULL NAME:</label><br></h3>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+   <h3><label for="email">EMAIL ADDRESS:</label><br></h3>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <h3><label for="checkin">CHECK-IN DATE:</label><br></h3>
+    <input type="date" id="checkin" name="checkin" required><br><br>
+
+   <h3><label for="checkout">CHECK-OUT DATE:</label><br></h3>
+    <input type="date" id="checkout" name="checkout" required><br><br>
+
+   <h3><label for="roomtype">ROOM TYPE:</label><br></h3>
+    <select id="roomtype" name="roomtype" required>
+      <option value="">--Select--</option>
+      <option value="single">Single Room</option>
+      <option value="double">Double Room</option>
+      <option value="suite">Suite</option>
+    </select><br><br>
+
+    <label for="requests">SPECIAL REQUEST:</label><br>
+    <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Any special requests..."></textarea><br><br>
+
+    <button type="submit">Book Now</button>
+    <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+</html>
