@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-   <link rel="icon" href="jackson-sophat-wUbNvDTsOIc-unsplash.jpg">
+   <link rel="icon" href="https://tse2.mm.bing.net/th/id/OIP.AwqzgIZu07_ZOh23Ho9LyAHaDj?pid=Api&P=0&h=180">
 <head>
   <title>Hotel Room Booking Form</title>
 </head>
 <body style="background-color: beige; text-align: center;">
-
-  <h1 style="background-color: slategray;">Hotel Room Booking Form</h1>
-
+  <table border="1"  style=" margin: auto; width: 50% ; background-color: gainsboro;" >
+  <tr><td style="background-color: slategray;"> <h1>Hotel Room Booking Form</h1></td></tr>
+  <tr>
+    <td>
   <form action="/submit-booking" method="post">
     
    <h3> <label for="fullname">FULL NAME:</label><br></h3>
-    <input type="text" id="fullname" name="fullname" required><br><br>
+    <input type="text" id="fullname" name="fullname" required><br><hr><br>
 
    <h3><label for="email">EMAIL ADDRESS:</label><br></h3>
-    <input type="email" id="email" name="email" required><br><br>
+    <input type="email" id="email" name="email" required><br><hr><br>
 
     <h3><label for="checkin">CHECK-IN DATE:</label><br></h3>
-    <input type="date" id="checkin" name="checkin" required><br><br>
+    <input type="date" id="checkin" name="checkin" required><br><hr><br>
 
    <h3><label for="checkout">CHECK-OUT DATE:</label><br></h3>
-    <input type="date" id="checkout" name="checkout" required><br><br>
+    <input type="date" id="checkout" name="checkout" required><br><hr><br>
 
    <h3><label for="roomtype">ROOM TYPE:</label><br></h3>
     <select id="roomtype" name="roomtype" required>
@@ -28,15 +29,19 @@
       <option value="single">Single Room</option>
       <option value="double">Double Room</option>
       <option value="suite">Suite</option>
-    </select><br><br>
+    </select><br><hr><br>
 
     <label for="requests">SPECIAL REQUEST:</label><br>
     <textarea id="requests" name="requests" rows="4" cols="40" placeholder="Any special requests..."></textarea><br><br>
-
-    <button type="submit">Book Now</button>
-    <button type="reset">Reset</button>
-
-  </form>
+  </td></tr>
+   <tr>
+    <th style="text-align:center"><button type="submit">Book Now</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="reset">Reset</button></th>
+   </tr>
+     </form>
+  </table>
 
 </body>
 </html>
