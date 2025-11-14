@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Selector</title>
+        <style>
+            /*Desendent combinator*/
+            div p{
+                color:blue;
+            }
+            .text> p{
+                background-color: bisque;
+            }
+            ul{
+                list-style:none;
+                display:flex
+            }
+            ul li{
+                margin: 10px;
+                border-right: 1px solid #F08;
+                padding-right:20px;
+            }
+            ul li::first-letter{
+                font-size:25px; 
+                color:aqua;
+            }
+            .para::after{
+                content:"Hello Sarthak";
+            }
+        </style>
+    </head>
+    <body>
+        <p clas="para">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nobis et facere quasi repudiandae rerum libero maiores temporibus atque nam laborum aspernatur inventore, dolores unde perspiciatis, sequi voluptatem? Aperiam, dolorem!
+        </p>
+        <!--non semantic and block element-->
+           <div class="text">
+            <h1>hello ABES</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores modi neque veniam excepturi dolorem accusantium, unde, sapiente, beatae facilis voluptas sequi aperiam repellendus praesentium odit quod fugiat in? Magni, dolorum?e</p>
+           <!--second div--><div>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perferendis est veritatis sint architecto. Hic, voluptatem libero ratione sed excepturi enim ea quia blanditiis pariatur. Praesentium possimus deserunt debitis sint?
+           </p>
+           </div>
+           <ul>
+            <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt deserunt perspiciatis corporis velit quam nobis amet labore aliquid autem, ab officia et enim iure eos, quidem soluta laborum eius cumque?</p></li>
+           </ul>
+           </div>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor architecto, similique sunt quis sed, ipsum quaerat commodi ut ad ab vitae, necessitatibus hic suscipit corporis laborum ipsa voluptatem consequuntur.
+           </p>
+           <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+           </ul>
+    </body>
+</html>

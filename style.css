@@ -1,0 +1,46 @@
+body{
+    magin: 0px;
+    padding: 0;
+    background-color: rgb(19, 129, 238);
+    background-image:url('abc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+*html{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 55 px ;
+     font-weight: 600;
+     font-style: italic;
+     color: yellowgreen;
+     text-decoration: underline;
+     text-transform: uppercase;
+     text-align: center;
+     text-shadow: 1px 5px 7px rgb(241, 27, 184) ;
+     /* text-wrap: balance; */
+
+}
+span
+{
+    color: rgb(19, 129, 238);
+    size: 28px;
+}
+#para{
+    color: salmon                                                                                             ;
+    display: inline;
+}
+ul
+{
+    list-style: none;
+}
+ul li{
+    color: tomato;
+    float: left;
+    margin: 80px;
+    font-size:xx-large;
+    text-align: center;
+}
