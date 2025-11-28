@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ABES Engineering College ID Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root {
+      --primary: #f61e0b;    /* Deep blue */
+      --accent: #ffc107;     /* Warm accent */
+      --text: #1b1f23;
+      --muted: #5f6b76;
+      --bg: #ffffff;
+      --line: #e3e7eb;
+    }
+
+    /* Page baseline */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #f4f6f8;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+    }
+
+    /* Center the card on the page */
+    .page {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    /* Card size approximates a CR80 ID (credit-card size) */
+    .id-card {
+      width: 460px;
+      height: 350px;
+      background: var(--bg);
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(13, 71, 161, 0.18), 0 4px 10px rgba(27, 31, 35, 0.08);
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: 70px 1fr 64px;
+      border: 1px solid var(--line);
+    }
+
+    /* Header */
+    .card-header {
+      background: linear-gradient(135deg, var(--primary), #163c7a);
+      color: #fff;
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+    }
+    .logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    .title h1 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .title p {
+      margin: 3px 0 0 0;
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    /* Body */
+    .card-body {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 14px;
+      padding: 12px 14px;
+    }
+
+    .photo {
+      width: 100%;
+      height: 100%;
+      min-height: 110px;
+      border-radius: 12px;
+      border: 1px dashed var(--line);
+      background:
+        radial-gradient(circle at 30% 30%, rgba(13, 71, 161, 0.08), transparent 60%),
+        #fafbfc;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+      padding: 6px;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block; /* Replace with your actual photo and set to block */
+    }
+
+    .info {
+      display: grid;
+      gap: 6px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 6px;
+      align-items: center;
+      padding: 4px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .row:last-child {
+      border-bottom: 0;
+    }
+    .label {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.2px;
+    }
+    .value {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* Footer */
+    .card-footer {
+      border-top: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding: 10px 14px;
+      align-items: center;
+    }
+    .issue {
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .signatures {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .sig {
+      display: grid;
+      align-items: end;
+    }
+    .sig-line {
+      height: 24px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+    }
+    .sig-label {
+      margin-top: 6px;
+      font-size: 10px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Optional print styles */
+    @media print {
+      body {
+        background: #fff;
+      }
+      .id-card {
+        box-shadow: none;
+        border: 1px solid #aaa;
+      }
+    }
+
+    /* Accent tag for branch */
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-weight: 700;
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 6px;
+      letter-spacing: 0.3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <article class="id-card" aria-label="ABES Engineering College student ID card">
+      <!-- Header -->
+      <header class="card-header">
+        <div class="logo" aria-hidden="true">ABES</div>
+        <div class="title">
+          <h1>ABES Engineering College</h1>
+          <p>College Code: 032 • Session: 2025-26</p>
+        </div>
+      </header>
+
+      <!-- Body -->
+      <section class="card-body">
+        <!-- Photo: replace with actual image src and show -->
+        <div class="photo" role="img" aria-label="Student photograph placeholder">
+          <span><img src="WhatsApp Image 2025-11-27 at 7.07.42 PM.jpeg" alt="photo"></span>
+        </div>
+
+        <div class="info">
+          <div class="row">
+            <span class="label">Admission number</span>
+            <span class="value">2025B15310092</span>
+          </div>
+          <div class="row">
+            <span class="label">NAME</span>
+            <span class="value">SARTHAK SRIVASTAVA</span>
+          </div>
+          <div class="row">
+            <span class="label">FATHER'S NAME</span>
+            <span class="value">ASHISH KUMAR SRIVASTAVA</span>
+          </div>
+          <div class="row">
+            <span class="label">Branch</span>
+            <span class="value"><span class="badge">B. Tech CSE (AIML)</span></span>
+          </div>
+          <div class="row">
+            <span class="label">Day scholar/hosteller</span>
+            <span class="value">Day Scholar</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="card-footer">
+        <div class="issue">Issuing date: 19/08/25</div>
+        
+        </div>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
