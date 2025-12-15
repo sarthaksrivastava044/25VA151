@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX MODEL</title>
+    <link rel="icon" href="https://icon-library.com/images/icon-favicon/icon-favicon-22.jpg">
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        } 
+        body{
+            background-color: antiquewhite;
+        }
+        h1{
+           background-color:rgb(255, 194, 81) ;
+           border:4px solid black;
+           height:88px;
+           margin:25px 25px 0px 25px;
+           padding:25px 0px 25px 0px;
+           box-sizing: border-box;
+           
+
+        }
+        h1::first-letter{
+            font-size: 40px;
+        }
+        .container{
+            display:flex;
+            background-color: beige;
+            margin:0px 25px 0px 25px;
+            border-radius: 50px;
+           
+           
+        }
+        .box{
+            height:35px;
+            width:448px;
+            box-sizing: border-box;
+            border: 2px solid black ;
+            padding:5px 100px 0px 150px;
+            color:blue;
+             border-radius: 50px;
+             font-weight: 600;
+        }
+        h2{
+            padding-left: 25px;
+           margin-top:20px;
+        }
+        .trend{
+            display:flex;
+            margin-top:20px;
+            flex-wrap: wrap;
+            
+
+        }
+        .boxe{
+            height:200px;
+            width:280px;
+            border:3px solid black;
+            margin-left:6px;
+             box-shadow: 4px  4px grey ;
+             text-align: center;
+             color: brown;
+             font-weight: 500;
+        }
+        .a,.c,.e,.g{
+            background-color: blue;
+        }
+        .b,.d,.f,.h{
+            background-color: aquamarine;
+        }
+     </style>
+</head>
+<body>
+    <h1><center>SHOPNEXT</center></h1>
+    <div class="container">
+        
+        <div  class="box 1">HOME</div>
+        <div  class="box 2">SERVICES</div>
+        <div  class="box 3">PRODUCT</div>
+        <div  class="box 4">FIND</div>
+        <div  class="box 5">ABOUT</div>
+    </div>
+    <h2>CSS BOX MODEL</h2>
+    <div class="trend">
+        <div class=" boxe a">BOX 1</div>
+        <div class="boxe b">BOX 2</div>
+        <div class="boxe c">BOX 3</div>
+        <div class="boxe d">BOX 4</div>
+        <div class="boxe e">BOX 5</div>
+        <div class="boxe f">BOX 6</div>
+        <div class="boxe g">BOX 7</div>
+    </div>
+    <div class="class">
+    <div class="ch">
+        <div class="st"></div>
+        <div class="st"></div>
+    </div>
+        <div class="st"></div>
+    </div>
+    
+    
+</body>
+</html>

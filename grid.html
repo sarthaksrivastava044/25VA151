@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,html{
+            margin:0px;
+            padding :0px;
+            box-sizing: border-box;
+        }
+
+        main{
+            width:1400px;
+            height:900px;
+            margin: 0 auto;
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows:100px 80px 500px 150px;
+            gap:10px;
+        }
+        header,nav,footer{
+            background-color: grey;
+            display:grid;
+            place-items: center;
+        }
+        section{
+            display:grid;
+            grid-template-columns: 1fr 2fr;
+            gap:10px;
+        }
+        #left,#right{
+            height:500px;
+            display:grid;
+            background-color: #CCC;
+        }
+        #rat,#sat{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border-bottom: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+     <header><h2>header</h2></header>
+    <nav><h2>Nav</h2></nav>
+    <section>
+        <div id="left"><h2>Left</h2></div>
+        <div id="right">
+            <div id="rat">h1</div>
+            <div id="sat">h2</div>
+    </section>
+    <footer><h2>Footer</h2></footer>
+    </main>
+</body>
+</html>
